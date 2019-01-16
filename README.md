@@ -21,6 +21,7 @@ Flutter Template 01 to create Flutter App easily.  Features included:
 3. Open the pubspec.yaml and add the following lines under dependencies:
 
   threading:
+  
   shared_preferences:
 
 4. Select 'Tools' -> 'Flutter' -> 'Flutter Packages Get' to install the packages.
