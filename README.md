@@ -14,6 +14,12 @@ Flutter Template 01 to create Flutter App easily.  Features included:
 
 6. Multi-threaded Main Program.  There is a 'Timer Function' funTimerDefault() in main.dart.  Inside this function, you can monitor whether any global variables defined in gv.dart are changed by another page, or by anything outside the widgets (e.g. variables changed by socket.io server), then in that function, you can 'setState' and re-render the pages.
 
+
+## Screen Shot
+
+![ScreenShot](https://raw.githubusercontent.com/lhcdims/fluttertemplate01/master/lib/fluttertemplate01.png)
+
+
 ## How to test this App
 
 1. Create a new Flutter Project in Android Studio.
