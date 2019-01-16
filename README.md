@@ -1,16 +1,29 @@
 # fluttertemplate01
 
-Flutter Template 01 to create Flutter App easily.
+Flutter Template 01 to create Flutter App easily.  Features included:
 
-## Getting Started
+1. Multi-Language Support.  Language of 'LABELS' is selected inside the App instead of using the system locale of the mobile phone.  You can create as many languages as you like by setting the LABELS of that langugae in the file LangStrings.dart
 
-This project is a starting point for a Flutter application.
+2. Bottom Page Navigation Bar.
 
-A few resources to get you started if this is your first Flutter project:
+3. Pages are stored in separate dart file.  There is a dart file called gv.dart, you may share variables in ALL dart programs by initializing the variables inside gv.dart
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+4. Height / Width / Font Size etc. of widgets, are set according to some ratios of Screen Height and Screen Width.  You may change the ratios in the file tmpSettings.dart
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+5. Multi-threaded Main Program.  There is a 'Timer Function' funTimerDefault() in main.dart.  Inside this function, you can monitor whether any global variables defined in gv.dart are changed by another page, or by anything outside the widgets (e.g. variables changed by socket.io server), then in that function, you can 'setState' and re-render the pages.
+
+## How to test this App
+
+1. Create a new Flutter Project in Android Studio.
+
+2. Copy all dart files in this project's 'lib' directory into your new project's lib directory.
+
+3. Open the pubspec.yaml and add the following lines under dependencies:
+
+  threading:
+  shared_preferences:
+
+4. Select 'Tools' -> 'Flutter' -> 'Flutter Packages Get' to install the packages.
+
+5. Run the program inside the emulator or device.
+
