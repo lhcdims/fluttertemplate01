@@ -10,7 +10,9 @@ Flutter Template 01 to create Flutter App easily.  Features included:
 
 4. Height / Width / Font Size etc. of widgets, are set according to some ratios of Screen Height and Screen Width.  You may change the ratios in the file tmpSettings.dart
 
-5. Multi-threaded Main Program.  There is a 'Timer Function' funTimerDefault() in main.dart.  Inside this function, you can monitor whether any global variables defined in gv.dart are changed by another page, or by anything outside the widgets (e.g. variables changed by socket.io server), then in that function, you can 'setState' and re-render the pages.
+5. Allows you to get/set SharedPreferences in Sychronize Mode.
+
+6. Multi-threaded Main Program.  There is a 'Timer Function' funTimerDefault() in main.dart.  Inside this function, you can monitor whether any global variables defined in gv.dart are changed by another page, or by anything outside the widgets (e.g. variables changed by socket.io server), then in that function, you can 'setState' and re-render the pages.
 
 ## How to test this App
 
